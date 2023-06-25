@@ -1,0 +1,16 @@
+<div class="search">
+  <i class="fa fa-search"></i>
+  <input #searchBox id="search-box" (input)="search(searchBox.value)"(blur)="onSearchBlur()" placeholder="search here" />
+</div>
+
+<ul class = "search-list" *ngIf="searchBox.value && searchedItems.length>0">
+  <li *ngFor="let item of searchedItems" >
+    <a (click)="goTo(item)"><img [src]="'assets/' + item.image" class="item-image"> <span class="item-name">{{item.name}} </span></a>
+  </li>
+</ul>
+
+<ul class = "search-list" *ngIf="searchBox.value && searchedItems.length==0">
+  <li> No results for {{searchBox.value}}</li>
+</ul>
+
+

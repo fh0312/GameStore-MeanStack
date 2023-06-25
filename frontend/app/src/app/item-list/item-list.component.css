@@ -1,0 +1,117 @@
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  text-align: center;
+  overflow-y: auto;
+  max-height: 600px;
+  }
+  
+  .item {
+    display: inline-block;
+    margin: 40px 15px;
+    position: relative;
+  }
+  
+  .item-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    cursor:pointer;
+  }
+  
+  .item-name {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .item-message {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #3482e7;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+  }
+  
+  .item:hover .item-message {
+    bottom: -35px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 12pt;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+    }
+
+    @media (max-width: 768px) {
+      .items-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        overflow-y:auto;
+        max-height: 87vh;
+        padding-bottom: 100px;
+        }
+
+        ::-webkit-scrollbar {
+          width: 0px;
+          border-radius: 12pt;
+          }
+          ::-webkit-scrollbar-track {
+          background: transparent; 
+          }
+          ::-webkit-scrollbar-thumb {
+          background: transparent; 
+          }
+          ::-webkit-scrollbar-thumb:hover {
+          background: transparent; 
+          }
+
+          .item {
+            display: inline-block;
+            margin: 20px 5px;
+            position: relative;
+          }
+          
+          .item-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+          }
+          
+          .item-name {
+            margin-top: 10px;
+            font-size: 14px;
+          }
+
+          
+    }

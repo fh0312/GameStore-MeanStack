@@ -1,0 +1,32 @@
+<h2>My Wishlist</h2>
+{{this.message}}
+  <div class="wishlist">
+    <div class="items">
+      <div  *ngFor="let item of getSortedWishlistItems() " class="item" [routerLink]="['/item', item.id]" [state]="{ item: item }">
+        <div class="item">
+          <img class="item-image" [src]="'assets/' + item.image" alt="{{item.name}} Image" >
+          <div class="item-name">{{ item.name }}</div>
+          <div class="item-price"> Preço: {{getPrice(item) * getQuant(item) }}  </div>
+          <div class="options">
+            <i class = "trash" class="fas fa-trash" (click)="removeAll(item)"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="counter">
+        Nº Artigos:
+        <span>
+          {{getNumero()}}
+        </span>
+      </div>
+      <div class="payment">
+        Total:
+        <span>
+          {{getTotal()}} €
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  

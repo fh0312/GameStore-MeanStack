@@ -1,0 +1,332 @@
+
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+.item-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    border-radius: 12pt;
+  }
+  
+  .item-name {
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 30px;
+  }
+  
+  .item-type {
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .item-details img{
+    width: 3%;
+    height: 3%;
+    padding-right: 5px;
+  }
+  
+  .item-description {
+    font-family: "muli";
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  
+  .details-text span{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  .item-platform {
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .item-idiomas {
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    display: inline-block;
+    color: #ffffff;
+    font-family: "muli";
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .item-price span{
+    font-size: 30px;
+    color: #256eff;
+  }
+  
+  .item-classification {
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .item-aval {
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .image-nav {
+    font-family: "muli";
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  .item-link{
+    font-family: "muli";
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .item-link a{
+    color: rgba(1,125,193,255);
+  }
+  
+  .left-arrow {
+    font-size: 30px;
+    margin-right: 10px;
+    order: 1;
+  }
+  
+  .right-arrow {
+    font-size: 30px;
+    margin-left: 10px;
+    order: 3;
+  }
+  
+  .item-image {
+    width: 80%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  
+  .item-images {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa-cart-plus{
+    background:#fefefe;
+    font-size: larger;
+  }
+  
+  .addtocart{
+    display:block;
+    margin-top: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius:100px;
+    border:none;
+    font-size:1em;
+    position:relative;
+    background:#fefefe;
+    cursor:pointer;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+  }
+  .addtocart:hover{
+    transform:scale(1.1);
+  }
+
+  .addtocart:active{
+    background:#8b8b8b;
+    transition:transform 0.2s;
+  }
+  .addtocart:active i{
+    background:#8b8b8b;
+    transition:transform 0.2s;
+  }
+
+
+
+  i{
+    margin-right:10px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .item-container {
+      grid-template-columns: 1fr;
+      margin: 10px;
+      padding: 10px;
+    }
+    
+    
+    .item-name {
+      color: #ffffff;
+      font-family: "muli";
+      margin-top: 10px;
+      font-weight: 800;
+      font-size: 30px;
+    }
+    
+    .item-type {
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .item-details img{
+      width: 3%;
+      height: 3%;
+      padding-right: 5px;
+    }
+    
+    .item-description {
+      font-family: "muli";
+      margin-bottom: 10px;
+      font-size: 25px;
+    }
+    
+    .details-text span{
+      font-size: 18px;
+      font-weight: 400;
+    }
+    .item-platform {
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .item-idiomas {
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .item-price {
+      display: inline-block;
+      color: #ffffff;
+      font-family: "muli";
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .item-price span{
+      font-size: 30px;
+      color: #256eff;
+    }
+    
+    .item-classification {
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .item-aval {
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    
+    .image-nav {
+      font-family: "muli";
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  
+    .item-link{
+      font-family: "muli";
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  
+    .item-link a{
+      color: rgba(1,125,193,255);
+    }
+    
+    .left-arrow {
+      font-size: 30px;
+      margin-right: 10px;
+      order: 1;
+    }
+    
+    .right-arrow {
+      font-size: 30px;
+      margin-left: 10px;
+      order: 3;
+    }
+    
+    .item-image {
+      width: 80%;
+      object-fit: contain;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    
+    
+    .item-images {
+      display: flex;
+      align-items: center;
+    }
+  
+    .fa-cart-plus{
+      background:#fefefe;
+      font-size: larger;
+    }
+    
+    .addtocart{
+      display:block;
+      margin-top: 0.8em;
+      margin-left: auto;
+      margin-right: auto;
+      padding:0.5em 1em 0.5em 1em;
+      border-radius:100px;
+      border:none;
+      font-size:1em;
+      position:relative;
+      background:#fefefe;
+      cursor:pointer;
+      overflow:hidden;
+      transition:transform 0.1s;
+      z-index:1;
+    }
+    .addtocart:hover{
+      transform:scale(1.1);
+    }
+  
+    .addtocart:active{
+      background:#8b8b8b;
+      transition:transform 0.2s;
+    }
+    .addtocart:active i{
+      background:#8b8b8b;
+      transition:transform 0.2s;
+    }
+  
+  
+  
+    i{
+      margin-right:10px;
+    }
+  
+  }
+  

@@ -1,0 +1,41 @@
+<h2>My Library</h2>
+
+
+<div *ngIf="sortedBibliotecaItems.length > 0; else elseBlock">
+  Order By: 
+<select class="dropdown" [(ngModel)]="selectedParam" (ngModelChange)="onSelectedParamChange()">
+  <option value="name">Name</option>
+  <option value="date">Date</option>
+  <option value="id">id(development)</option>
+</select>
+</div>
+
+<ng-template #elseBlock>
+  <div>
+    {{this.message}}
+  </div>
+</ng-template>
+
+
+
+  <div class="biblioteca">
+    <div class="items">
+      <div  *ngFor="let item of sortedBibliotecaItems; let i = index " class="item" [routerLink]="['/item', item[0].id]" [state]="{ item: item[0] }">
+        <div class="item">
+          <img class="item-image" [src]="'assets/' + item[0].image" alt="{{item[0].name}} Image" >
+          <div class="item-name">{{ item[0].name }}</div>
+          <div class="item-date"> Data de Aquisição: {{ item[1] | date : "dd/MM/YYYY  'às' HH:mm " }}  </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="counter">
+        Nº Artigos:
+        <span>
+          {{getNumero()}}
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  

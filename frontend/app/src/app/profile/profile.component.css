@@ -1,0 +1,298 @@
+
+
+@media (min-width: 780px) {
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+  .user {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+    gap: 80px;
+  }
+
+  div {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  /* Style for user info elements */
+  .useer p:first-child {
+    font-size: 1.2rem;
+    margin: auto auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .user input {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: auto auto;
+    margin-bottom: 0.5rem;
+  }
+
+  img {
+    margin: auto auto;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 1pt grey dotted;
+    border-radius: 12px;
+  }
+
+  .image p{
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+
+  .picture {
+    margin: auto auto;
+    text-align: center;
+  }
+  /* Style for file input and save button */
+  input[type="file"] {
+    margin: auto auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  button[type="button"] {
+    text-align: center;
+    font-variant: small-caps;
+
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #283250;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button[type="button"]:hover {
+    background-color: #0069d9;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .parte{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  /* Style for navigation links */
+  a {
+    text-align: center;
+    flex: auto;
+    margin: auto;
+    border: #ccc 2pt solid;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1pt rgba(0, 0, 0.005, 0.5);
+    font-size: 1rem;
+    font-variant: small-caps;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+  }
+
+  a:hover {
+    background-color: #ccc;
+    color: black;
+    text-decoration: none;
+    transition: ease-in-out;
+  }
+
+  /* Style for message container */
+  .msg {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .image-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    white-space: nowrap;
+    padding-bottom: 40px;
+  }
+
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 780px) {
+  .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+  }
+  
+  div{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  /* Style for user info elements */
+  .useer p:first-child {
+    font-size: 1.2rem;
+    margin: auto auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user input {
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: auto auto;
+    margin-bottom: 0.5rem;
+  }
+  
+  img {
+    margin: auto auto;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 1pt grey dotted;
+    border-radius: 12px;
+  }
+  
+  .picture{
+    margin: auto auto;
+    text-align: center;
+  }
+
+  input[type="file"] {
+    margin: auto auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  button[type="button"] {
+
+    text-align: center;
+    font-variant: small-caps;
+    
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: #283250;
+    color: #fff;
+    border: none;
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .links{
+   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: auto auto;
+  }
+  .parte{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  a{
+    width: 100px;
+    text-align: center;
+    flex:auto;
+    margin: auto;
+    border: #ccc 2pt solid;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 1pt rgba(0, 0, 0.005, 0.5);
+    font-size: 1rem;
+    margin-right: 1rem;
+    font-variant: small-caps;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: #ccc;
+    color:black;
+    text-decoration: none;
+    transition: ease-in-out;
+  }
+  
+  /* Style for message container */
+  .msg {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: red;
+  }
+  
+  .image-list {
+
+    margin-top: 30px;
+    display: flex;
+    max-width: 100%;
+    overflow: auto;
+    margin-bottom: 30px;
+
+  }
+  
+  .image-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+
+  .info p{
+    text-align: center;
+  }
+
+  .image-item img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+}

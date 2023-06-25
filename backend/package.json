@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=v16.15.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=app:* npm run devstart",
+    "populatedb": "node populateDb.js"
+  },
+  "dependencies": {
+    "async": "^3.2.4",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~4.3.4",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^6.15.0",
+    "helmet": "^6.0.1",
+    "http-errors": "~2.0.0",
+    "jade": "^1.11.0",
+    "luxon": "^3.3.0",
+    "mongoose": "^6.9.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

@@ -1,0 +1,67 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<div class="logo" (click)="goToHome()">
+  <img src="assets\logo.png" alt="Logo">
+</div>
+
+<div class="dashboard">
+  <nav id="nav"(click)="removeNav()">
+    <ul>
+      <li>
+        <a id="home" routerLink="/" (click)="removeNav()">
+          <!--<i class="fa fa-home"></i>-->
+          <span>Home</span>
+        </a>
+      </li>
+      <li *ngIf="isAuth()">
+        <a routerLink="/dashboard" (click)="removeNav()">
+          <!--<i class="fa fa-tv"></i>-->
+          <span>Dashboard</span>
+        </a>
+      </li>
+      <li *ngIf="!isAuth()">
+        <a routerLink="/auth" (click)="removeNav()">
+          <span>Authenticate</span>
+        </a>
+      </li>
+      <li *ngIf="!isAuth()">
+        <a routerLink="/register" (click)="removeNav()">
+          <span>Register</span>
+        </a>
+      </li>
+      <li *ngIf="isAuth()">
+        <a type="button" (click)="logout()" (click)="removeNav()">Logout</a>
+
+      </li>
+    </ul>
+  </nav>
+  <div class="right-main">
+    <div class="main-top">
+      <app-item-search></app-item-search>
+      <div class="top">
+        <i class="fa fa-bell"></i>
+        <a routerLink="/cart">
+          <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a routerLink="/profile">
+          <i class="fa fa-user-circle"></i>
+        </a>
+        <a>
+          <i class="fa fa-bars" id="hamburger" (click)="showNav()"></i>
+        </a>
+
+      </div>
+    </div>
+    <div class = screen>
+      <div *ngIf="isHomePage()">
+        <app-item-list></app-item-list>
+      </div>
+      <router-outlet></router-outlet>
+    </div>
+
+  </div>
+</div>
+
+

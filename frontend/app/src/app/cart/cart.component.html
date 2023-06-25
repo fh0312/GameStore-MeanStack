@@ -1,0 +1,38 @@
+<h2>My Cart</h2>
+  <div class="cart">
+    <div class="items">
+      <div  *ngFor="let item of getSortedCartItems() ">
+        <div class="item">
+          <img class="item-image" [src]="'assets/' + item.image" alt="{{item.name}} Image" >
+          <div class="item-name">{{ item.name }}</div>
+          <div class ="item-type">{{item.type }}</div>
+          <div class="item-price"> Preço: {{getPrice(item) * getQuant(item) }}  </div>
+          <div class="options">
+            <i class="fas fa-circle-minus" (click)="removeOne(item)"></i>
+            <span>{{getQuant(item)}}</span>
+            <i class="fas fa-circle-plus" (click)="addOne(item)"></i>
+            <span class="trash"><i class = "trash" class="fas fa-trash" (click)="removeAll(item)"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      {{this.message}}
+    </div>
+    <div class="footer">
+      <div class="counter">
+        Nº Artigos:
+        <span>
+          {{getNumero()}}
+        </span>
+      </div>
+      <div class="payment">
+        Total:
+        <span>
+          {{getTotal()}} €
+        </span>
+      </div>
+    </div>
+  </div>
+  
+  

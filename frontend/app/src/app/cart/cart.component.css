@@ -1,0 +1,224 @@
+
+  h2 {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .item-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    cursor:pointer;
+  }
+
+  .options i {
+    text-align: center;
+    padding: 5px;
+    cursor:pointer;
+  }
+
+  .options {
+    margin: auto auto;
+  }
+
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+
+  .item {
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 0;
+    justify-content: center;
+    align-content: space-between;
+    gap: 60%;
+  }
+
+  .payment {
+    display: block;
+    justify-content: end;
+    text-align: right;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .counter {
+    display: block;
+    justify-content: start;
+    text-align: left;
+    padding: 20px;
+    padding-top: 0;
+  }
+
+  .cart {
+    height: 550px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .cart .items {
+    flex: 1;
+    overflow-y: auto;
+  }
+
+  .trash i:hover{
+    color:red;
+  }
+  .purchase{
+    font-weight: bold;
+    font-family: "Urbanist", sans-serif;
+    display:block;
+    margin-top: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius:100px;
+    border:none;
+    font-size:1em;
+    position:relative;
+    background:#256eff;
+    cursor:pointer;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+    color: white;
+  }
+  .purchase:hover{
+    transform:scale(1.1);
+  }
+
+  .purchase:active{
+    background:#5c91fa;
+    transition:transform 0.2s;
+  }
+  .purchase:active i{
+    background:#5c91fa;
+    transition:transform 0.2s;
+  }
+
+
+@media (max-width: 768px) {
+  h2 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .item-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .options i {
+    text-align: center;
+    padding: 5px;
+  }
+
+  .options {
+    margin: auto auto;
+  }
+
+  .items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .footer {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-top: 0;
+    justify-content: center;
+    align-content: center;
+    gap: 20%;
+  }
+
+  .payment {
+    width: 140px;
+    padding: 10px;
+    display: block;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    padding: 10px;
+    display: block;
+    width: 190px;
+    display: block;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+  .purchase{
+    font-family: "Urbanist", sans-serif;
+    display:block;
+    margin-top: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius:100px;
+    border:none;
+    font-size:1em;
+    position:relative;
+    background:#256eff;
+    cursor:pointer;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+    color:white
+    
+  }
+  .purchase:hover{
+    transform:scale(1.1);
+  }
+
+  .purchase:active{
+    background:#5c91fa;
+    transition:transform 0.2s;
+  }
+  .purchase:active i{
+    background:#5c91fa;
+    transition:transform 0.2s;
+  }
+
+
+
+  .cart {
+    height: 170vw;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .cart .items {
+    flex: 1;
+    overflow-y: auto;
+  }
+}
+

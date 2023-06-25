@@ -1,0 +1,34 @@
+<h2>Create your new account now !</h2>
+<content>
+  <form (ngSubmit)="createUser()">
+    <div class="create">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required pattern="[a-zA-Z0-9]{3,}" #usernameInput="ngModel">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required minlength="8"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" #passwordInput="ngModel">
+      </div>
+    </div>
+    <button type="submit">Register</button>
+  </form>
+  <div id="requirements">
+    <p>Username must have:</p>
+  <ul>
+    <li>Only alphanumeric characters.</li>
+    <li>At least 3 characters.</li>
+  </ul>
+  <p>Password must have:</p>
+  <ul>
+    <li>At least 8 characters.</li>
+    <li>At least one uppercase letter (A-Z).</li>
+    <li>At least one lowercase letter (a-z).</li>
+    <li>At least one number (0-9).</li>
+  </ul>
+  </div>
+</content>
+
+<div class="msg" *ngIf="message">{{ message }}</div>
+

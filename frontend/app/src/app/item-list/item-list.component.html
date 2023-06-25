@@ -1,0 +1,11 @@
+<div class="items-container">
+  <div *ngFor="let item of items" class="item" 
+    [routerLink]="['/item', item.id]" 
+    [state]="{ item: item }" 
+    tabindex="0" 
+    (keydown.enter)="onItemEnter(item)">
+    <img [src]="'assets/' + item.image" alt="Item Image" class="item-image">
+    <div class="item-name">{{ item.name }}</div>
+    <div class="item-message">Click for details</div>
+  </div>
+</div>

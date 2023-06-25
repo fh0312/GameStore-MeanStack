@@ -1,0 +1,35 @@
+<div class="item-container">
+    <div class="item-images">
+      <div class="image-nav">
+        <a *ngIf="item.image1 || item.image2" (click)="showPrevImage()" class="arrow left-arrow">&lt;</a>
+      </div>
+      <img [src]="'assets/' + (currentImage === 1 ? item.image : currentImage === 2 ? item.image1 : item.image2)" alt="Item Image" class="item-image">
+      <div class="image-nav">
+        <a *ngIf="item.image1 || item.image2" (click)="showNextImage()" class="arrow right-arrow">&gt;</a>
+      </div>
+    </div>
+    <div class="item-details">
+      <div class="item-name">Name: {{ item.name }}</div>
+      <div class="item-price">Price: <span>{{ item.price }}</span></div>
+      <div class="details-text">
+        <div class="item-description"> About this item (only first 1000 characters are displayed): <br><span>{{ item.description | slice:0:1000 }}</span></div>
+        <div class="item-platform"><img src="assets\check.png">Platform: <span>{{ item.platform }}</span></div>
+        <div class="item-type"><img src="assets\check.png">Type: <span>{{ item.type }}</span></div>
+        <div class="item-idiomas"><img src="assets\check.png">Idioms: <span>{{ item.idiomas }}</span></div>
+        <div class="item-classification"><img src="assets\check.png">Classification: <span>{{ item.classification }}</span></div>
+        <div class="item-aval"><img src="assets\check.png">Avaliation: <span>{{ item.aval }}</span></div>
+        <div class="item-link" *ngIf="item.link"> Link:
+          <a href="{{ item.link }}" target="_blank">{{ item.name }}-link</a>
+        </div>
+      </div>
+      <button class="addtocart" (click) = "addToCart(item)">
+        <i class="fas fa-cart-plus"></i>
+        Add to Cart
+      </button>
+      <button class="addtocart" (click) = "addToWishlist(item)">
+        <i class="far fa-heart-o" style="font-size:20px" > </i>
+        Add to Wishlist
+      </button>
+      <div class="msg" *ngIf="message" style="margin-top: 15px">{{ message }}</div>
+    </div>
+  </div>

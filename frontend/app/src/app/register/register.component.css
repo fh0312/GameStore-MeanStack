@@ -1,0 +1,246 @@
+@media (min-width: 768px) {
+  h2{
+    margin-top: 50px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 30pt;
+    letter-spacing: 0.07em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #fff;
+    font-weight: 600;
+  }
+
+  content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  li{
+    text-align: left;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: rgba(1,125,193,255);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    padding: 20px;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 20pt;
+  }
+  
+  input,
+  button {
+    
+    text-align: center;
+    width: 80%;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .msg{
+    color: rgb(72, 13, 13);
+  }
+  
+  button[type="submit"]:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4;
+    cursor : pointer;
+  }
+  
+  div {
+    color: #002147;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #002147;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .msg{
+    text-align: center;
+    color: rgb(144, 30, 30);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #requirements {
+    margin-top: 1em;
+    border: 1px solid white; /* Light blue border */
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow */
+    padding: 10px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  #requirements p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #requirements li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      width: 100%;
+      padding: 10px;
+    }
+    
+    button[type="submit"] {
+      font-size: 20pt;
+    }
+    
+    #requirements {
+      font-size: 0.7rem;
+    }
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  h2{
+    width: 80%;
+    margin: auto;
+    margin-top: 35px ;
+    text-align: center;
+    font-size: 18pt;
+    margin-bottom: 35px;
+    letter-spacing: 1pt;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+      'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      color: #fff;
+    font-variant: small-caps;
+    font-weight: 800;
+  }
+  li{
+    text-align: left;
+  }
+  form {
+    overflow-y: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 12pt;
+    background: rgba(1,125,193,255);
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    padding: 20px;
+    margin:15px;
+    font-family: "Urbanist", sans-serif;
+  }
+
+  .create{
+    margin-top: 0px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 18pt;
+  }
+  
+  input,
+  button {
+    
+    text-align: center;
+    width: 80%;
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .msg{
+    color: rgb(72, 13, 13);
+  }
+  
+  button[type="submit"]:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 5px #03e9f4;
+    cursor : pointer;
+  }
+  
+  div {
+    color: #002147;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"] {
+    background-color: #002147;
+    color: #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .msg{
+    text-align: center;
+    color: rgb(144, 30, 30);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  #requirements {
+    margin: 20px;
+    border: 1px solid white; /* Light blue border */
+    border-radius: 12px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Light shadow */
+    padding: 10px;
+    margin-bottom: 20px;
+    color:white;
+  }
+
+  
+  #requirements p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 14pt;
+    font-family: "Urbanist", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  #requirements li {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    font-size: 9pt;
+  }
+  
+}

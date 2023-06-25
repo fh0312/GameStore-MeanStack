@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="form-container">
+    <h2>Welcome Back !</h2>
+    <form (ngSubmit)="authenticate()">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="usernameLogin" #usernameInput="ngModel">
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input value="hello" type="password" id="password" name="password" [(ngModel)]="passwordLogin" #passwordInput="ngModel">
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+    <div class="msg" *ngIf="messageLogin">{{ messageLogin }}</div>
+  </div>
+</div>
