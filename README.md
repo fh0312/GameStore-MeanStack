@@ -12,3 +12,19 @@ Como parte da metodologia Kanban, o conjunto de funcionalidades a implementar du
 ### Foram planeados e desenvolvidos 2 sprints de software com uso de metodologias ágeis nomeadamente SRUM e KANBAN.
 ### Cada um dos sprints foi planeado para uma equipa de 5 pessoas tendo em conta um conjunto de 5 pessoas, e o product backlog do projeto
 ### No final de cada sprint foi relaizado um video mostrando tudo que ficou feito e acompanhado com o um relatorio de informacao à cerca do sprint.
+
+
+# --English--
+
+## Description:
+Your company has decided to improve the promotion of the games it produces by implementing a system that provides more visibility for its products and enables greater interaction among its players. Your development team has been tasked with initiating the development of this project, which is fundamental for the future of the company!
+
+## Project Execution:
+The characteristics of this project require a team composed of 5 members with well-defined and distinct skills and responsibilities, which will be evaluated. Due to the importance of the project, the evaluation process will follow strict rules. The formation of teams will be done in the "Groups of PSI" activity on the PSI page in Moodle. The project will follow a software development methodology inspired by the Kanban methodology, which has well-defined roles and activities, operationalized by the JIRA Agile platform.
+
+As part of the Kanban methodology, the set of features to be implemented during each sprint is defined at the beginning of the sprint. The initial backlog consists of the items below (these items may be subject to changes at any time). All these items have the following common acceptance criteria: (i) the process must be possible to complete on a desktop or mobile browser; (ii) the process must be possible to complete on a desktop browser without using the mouse.
+
+## Planning:
+Two software sprints were planned and developed using agile methodologies, namely Scrum and Kanban.
+Each sprint was planned for a team of 5 people, taking into account a set of 5 people and the project's product backlog.
+At the end of each sprint, a video was made showing everything that was accomplished, accompanied by a report providing information about the sprint.
